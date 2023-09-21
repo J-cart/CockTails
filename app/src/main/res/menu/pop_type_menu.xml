@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/alcoholic_option"
+        android:title="Alcoholic"
+        android:checkable="true"
+        />
+    <item
+        android:id="@+id/non_alcoholic_option"
+        android:checkable="true"
+        android:title="Non Alcoholic" />
+
+</menu>
