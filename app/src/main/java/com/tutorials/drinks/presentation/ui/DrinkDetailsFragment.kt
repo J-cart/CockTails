@@ -110,14 +110,14 @@ class DrinkDetailsFragment : Fragment() {
                         binding.favoriteBtn.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.favorite_outlined_icon))
                         binding.favoriteBtn.setOnClickListener {
                             viewModel.addToFavorites(args.drink)
+                            Toast.makeText(
+                                    requireContext(),
+                            "Added to favorites",
+                            Toast.LENGTH_SHORT
+                            ).show()
                         }
                     }
                     else -> {
-                        Toast.makeText(
-                            requireContext(),
-                            "Added to favorites",
-                            Toast.LENGTH_SHORT
-                        ).show()
                         binding.favoriteBtn.setImageDrawable(ContextCompat.getDrawable(requireContext(),R.drawable.favorite_icon))
                         binding.favoriteBtn.setOnClickListener {
                             viewModel.removeFromFavorites(args.drink)

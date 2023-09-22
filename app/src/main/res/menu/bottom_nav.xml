@@ -10,12 +10,12 @@
 
     <item
         android:id="@+id/categoryFragment"
-        android:icon="@drawable/ic_baseline_category_24"
+        android:icon="@drawable/category_icon"
         android:title="Category"
         app:showAsAction="always" />
     <item
         android:id="@+id/favoritesFragment"
-        android:icon="@drawable/favorite_icon"
+        android:icon="@drawable/favorite_selector"
         android:title="Favorites"
         app:showAsAction="always" />
 

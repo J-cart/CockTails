@@ -25,9 +25,9 @@ class FavoriteDrinksAdapter:ListAdapter<Drink, FavoriteDrinksAdapter.ViewHolder>
                     placeholder(R.drawable.drink_icon)
                     error(R.drawable.drink_icon)
                 }
-            }
-            binding.root.setOnClickListener {
-                listener?.let { it(drink) }
+                holder.setOnClickListener {
+                    listener?.let { it(drink) }
+                }
             }
         }
     }
